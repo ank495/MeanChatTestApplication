@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+</style>
+</head>
+<body ng-app="mainApp">
+<form ng-controller="sdAppCtrl">
+  <label for="fname">Name</label>
+  <input type="text" id="name" name="name" ng-model="firstName">
+  <label for="lname">Site Name</label>
+  <input type="text" id="site" name="site" ng-model="siteName">
+  <button type="button" ng-click="sendUserInfo()">Authenticate</button>
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+<script src = "controller/controller.js"></script>
+</body>
+</html>
